@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%=title%></title>
+
+
+</head>
+<body style="background-color: #1B202C;">
+  
+  <%-include("./parts/navbar.ejs")%>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><figure   style="width: 600px" class="md:flex bg-gray-100 rounded-xl p-8 md:p-0">
+    <svg style="width: 190px" class="w-32 h-32 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 186.39 186.39"><defs><style>.cls-1{fill:transparent;}.cls-2{fill:#fff;}</style></defs><g style="height: 512px;" id="katman_2" data-name="katman 2"><g id="katman_1-2" data-name="katman 1"><rect class="cls-1" width="186.39" height="186.39"/><path class="cls-2" d="M75.32,154.22a.67.67,0,0,1,.18-.52,127.23,127.23,0,0,0,11.92-14.4c2.54-3.64,5-7.31,6.3-11.66a12.9,12.9,0,0,0,.4-1.74c.55-3.74-1.54-6.05-5.59-6.28-4.64-.26-9.08.8-13.48,2a136.26,136.26,0,0,0-13.6,4.66,1.18,1.18,0,0,1-1.6-.37c-8.12-9.7-13.61-20.65-15.45-33.23A52.57,52.57,0,0,1,50,60.4c3-5.79,7.47-12.15,10.51-15.19a23,23,0,0,0,4.72,6.53,24.53,24.53,0,0,0,14.23,6.82c8.42,1.18,16.41-.71,24.21-3.66A117.19,117.19,0,0,0,124.9,44c5.37-3.4,10.54-7.1,15.58-11,.33-.26.68-.5,1.14-.84.42,3.88.63,7.6.77,11.32a204.75,204.75,0,0,1-.58,25.62c-1.29,15-4.06,29.71-10,43.65-4.51,10.56-10.6,20-19.5,27.52a59.17,59.17,0,0,1-28.7,13,48.51,48.51,0,0,1-6,.74c-.17,0-.31,0-.36.22Z"/></g></g></svg>
+  
+    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+      <p>
+        <h1 style="color: white" class="text-lg font-semibold">
+          <%=roffly.tag%>
+          <% if(roffly.presence.status == "dnd"){ %>
+            <span style=" color: #ED4245; font-style: bold;" class="font-bold text-white px-2 rounded-md bg-red-600">●</span>
+            <% } %>
+         
+            <% if(roffly.presence.status == "online"){ %>
+              <span style="color: #3BA55D; font-style: bold; "class="font-bold text-white px-2 rounded-md bg-red-600">●</span>
+              <% } %>
+
+              <% if(roffly.presence.status == "idle"){ %>
+                <span style="color: #FAA81A; font-style: bold; "class="font-bold text-white px-2 rounded-md bg-red-600">●</span>
+                <% } %>
+
+                <% if(roffly.presence.status == "offline"){ %>
+                  <span style="color: #747F8D; font-style: bold; "class="font-bold text-white px-2 rounded-md bg-red-600">●</span>
+                  <% } %>
+
+        </h1>
+      </p>
+      <figcaption class="font-medium">
+        <div style="color: darkgray" class="text-cyan-600">
+          Hi I'm Roffly, I'm Back-End Developer I Love Node.js
+        </div>
+        <div style="color: gray" class="text-gray-500">
+          <i class="fas fa-search-location"></i> Turkey/Mersin
+        </div>
+      </figcaption>
+    </div>
+    <a href="https://discord.com/users/715576724674314360" class="mx-2 my-3 docs-creator" style="color: rgb(255, 255, 255); transform: none; "><svg style="height:20px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="discord" class="svg-inline--fa fa-discord fa-w-14 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z"></path></svg></a>
+    <a href="https://github.com/roffly" class="mx-2 my-3 docs-creator" style="color: rgb(255, 255, 255); transform: none;"><svg style="height:20px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path></svg></a>
+    <a href="https://www.youtube.com/channel/UCLBdHp1sVV9wLmLHYZHfyZw" class="mx-2 my-3 docs-creator" style="color: rgb(255, 255, 255); transform: none;"><svg style="height:20px" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18 " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path></svg></a>
+  </figure></center>  <br>
+  <div style="position: absolute; left: 50px;  height:100px; width: 300px" class="card shadow py-2">
+    <div class="card-body">
+      <div class="row no-gutters align-items-center">
+        <div class="col mr-2">
+          <h3 class="text-xs font-weight-bold text-danger  mb-1">
+        <h3 style="position: absolute; left: 100px ; color: #FFFFFF">Javascript</d></h3>
+          </h3>
+        </div> 
+        <div class="col-auto">
+                                      <img style="position: absolute; left:25px; border-radius: 20%;" data-tippy-content="Roffly" src="https://cdn.iconscout.com/icon/free/png-256/javascript-2752148-2284965.png" class="" width="55px">
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div style="position: absolute;  left: 400px; height:100px; width: 300px" class="card shadow py-2">
+  <div class="card-body">
+    <div class="row no-gutters align-items-center">
+      <div class="col mr-2">
+        <h3 class="text-xs font-weight-bold text-danger  mb-1">
+      <h3 style="position: absolute; left: 100px ; color: #FFFFFF">Typescript</d></h3>
+        </h3>
+      </div> 
+      <div class="col-auto">
+                                    <img style="position: absolute; left:25px; ;" data-tippy-content="Roffly" src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg" class="" width="55px">
+      </div>
+    </div>
+  </div>
+</div>
+<div style="position: absolute;  left: 750px; height:100px; width: 300px" class="card shadow py-2">
+  <div class="card-body">
+    <div class="row no-gutters align-items-center">
+      <div class="col mr-2">
+        <h3 class="text-xs font-weight-bold text-danger  mb-1">
+      <h3 style="position: absolute; left: 100px ; color: #FFFFFF">Vue.js</d></h3>
+        </h3>
+      </div> 
+      <div class="col-auto">
+                                    <img style="position: absolute; left:25px; top: 30px;" data-tippy-content="Roffly" src="https://vuejs.org/images/logo.svg" class="" width="55px">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="position: absolute;  left: 1100px; height:100px; width: 300px" class="card shadow py-2">
+  <div class="card-body">
+    <div class="row no-gutters align-items-center">
+      <div class="col mr-2">
+        <h3 class="text-xs font-weight-bold text-danger  mb-1">
+      <h3 style="position: absolute; left: 100px ; color: #FFFFFF">Node.js</d></h3>
+        </h3>
+      </div> 
+      <div class="col-auto">
+                                    <img style="position: absolute; left:25px; ;" data-tippy-content="Roffly" src="https://seeklogo.com/images/N/nodejs-logo-FBE122E377-seeklogo.com.png" class="" width="55px">
+      </div>
+    </div>
+  </div>
+</div>
+
+ <br>
+
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<%-include("./parts/footer.ejs")%>
+<style>
+.card {
+background:#374151;transition:all .3s;margin-bottom:10px position:relative;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word  
+}
+</style>
+
+<style>.pulse-avatar-dnd {
+background-color: red;
+border-radius: 50%;
+animation: pulse-dnd 2s infinite;
+}
+.pulse-avatar-online {
+background-color: green;
+border-radius: 50%;
+animation: pulse-online 2s infinite;
+}
+.pulse-avatar-idle {
+background-color: yellow;
+border-radius: 50%;
+animation: pulse-idle 2s infinite;
+}
+.pulse-avatar-offline {
+background-color: grey;
+border-radius: 50%;
+animation: pulse-offline 2s infinite;
+}
+
+
+@keyframes pulse-dnd {
+0% {
+transform: scale(0.9);
+box-shadow: 0 0 0 0 rgba(255, 82, 82, 0.7);
+}
+
+70% {
+transform: scale(1);
+box-shadow: 0 0 0 10px rgba(255, 82, 82, 0);
+}
+
+100% {
+transform: scale(0.9);
+box-shadow: 0 0 0 0 rgba(255, 82, 82, 0);
+}
+}
+@keyframes pulse-idle {
+0% {
+transform: scale(0.9);
+box-shadow: 0 0 0 0 rgba(250, 166, 26, 0.7);
+}
+
+70% {
+transform: scale(1);
+box-shadow: 0 0 0 10px rgba(250, 166, 26, 0);
+}
+
+100% {
+transform: scale(0.9);
+box-shadow: 0 0 0 0 rgba(250, 166, 26, 0);
+}
+}
+@keyframes pulse-online {
+0% {
+transform: scale(0.9);
+box-shadow: 0 0 0 0 rgba(67, 181, 129, 0.7);
+}
+
+70% {
+transform: scale(1);
+box-shadow: 0 0 0 10px rgba(67, 181, 129, 0);
+}
+
+100% {
+transform: scale(0.9);
+box-shadow: 0 0 0 0 rgba(67, 181, 129, 0);
+}
+}
+@keyframes pulse-offline {
+0% {
+transform: scale(0.9);
+box-shadow: 0 0 0 0 rgba(116, 127, 141, 0.7);
+}
+
+70% {
+transform: scale(1);
+box-shadow: 0 0 0 10px rgba(116, 127, 141, 0);
+}
+
+100% {
+transform: scale(0.9);
+box-shadow: 0 0 0 0 rgba(116, 127, 141, 0);
+}
+}</style>

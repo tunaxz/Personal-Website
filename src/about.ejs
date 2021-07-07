@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+</head>
+<body style="background-color: #1B202C;">
+    <%-include("./parts/navbar.ejs")%><br><br><br><br><br><br>
+    <center> <div class="card" style="width:1400px ">
+
+
+    
+         <center> <img class="card-img-top" src="https://cdn.discordapp.com/avatars/715576724674314360/bc3c3058aa3ccd5e1f396a7c55e0c6e3.webp?size=256" style="width: 200px; height: 200px; border-radius: 50%;" alt="Card image"></center>
+       
+      <br>
+       <div class="card-body">
+        <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+          <p>
+            <h1 style="color: white" class="text-lg font-semibold">
+              <%=roffly.tag%>
+              <% if(roffly.presence.status == "dnd"){ %>
+                <span style=" color: #ED4245; font-style: bold;" class="font-bold text-white px-2 rounded-md bg-red-600">●</span>
+                <% } %>
+             
+                <% if(roffly.presence.status == "online"){ %>
+                  <span style="color: #3BA55D; font-style: bold; "class="font-bold text-white px-2 rounded-md bg-red-600">●</span>
+                  <% } %>
+    
+                  <% if(roffly.presence.status == "idle"){ %>
+                    <span style="color: #FAA81A; font-style: bold; "class="font-bold text-white px-2 rounded-md bg-red-600">●</span>
+                    <% } %>
+    
+                    <% if(roffly.presence.status == "offline"){ %>
+                      <span style="color: #747F8D; font-style: bold; "class="font-bold text-white px-2 rounded-md bg-red-600">●</span>
+                      <% } %>
+    
+            </h1>
+          </p>
+          <span style="font-weight: 500; --text-opacity: 1; color: #fff; color: rgba(255,255,255,var(--text-opacity));" data-v-a10bc8fa="" class="font-extrabold text-white">&nbsp;&nbsp;About</span>
+          <h4 class="card-text text-muted">&nbsp;&nbsp;Hi I'm Roffly, I'm Back-End Developer I Love Node.js</h4>
+
+          </div>
+      </div></center>
+</body>
+</html>
+<style>
+    .card {
+   background:#23272a;transition:all .3s;box-shadow:0 0 15px #000;margin-bottom:10px display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;min-width:0;word-wrap:break-word  
+
+      margin-left: 4px; margin-bottom: 9px;     border-radius:.25rem;
+  
+    }
+    .card-custom-avatar img {
+      border-radius: 20%;
+      box-shadow: 0 0 15px rgba(10, 10, 10, 0.3);
+      position: absolute;
+      top: 150px;
+      left: 95.25rem;
+      width: 100px;
+      height: 100px;
+    }
+    .text-muted {
+      height: 100px;
+    }
+
+
+  </style>
