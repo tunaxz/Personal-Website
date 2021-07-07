@@ -37,5 +37,5 @@ app.get('/about', async(req, res) => {
 
 
 
-client.login("NzY0ODczMDUxMjI0NDA4MDc0.X4Mlig.FMbLxyAlvWfeFtTvaHhsMuAa5Z8");
+client.login("");
 app.listen(3000)
