@@ -1,5 +1,4 @@
 var express = require('express');
-var db = require('quick.db');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
